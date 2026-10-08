@@ -17,6 +17,7 @@ Source for francescodurazzo.com, the author site of Francesco Durazzo.
 - Settled facts so far:
   - Author: Francesco Durazzo (pen name).
   - First book: *Agência de Detetives Grandes Galerias Ltda.* (Brazilian Portuguese).
+  - English edition name: *The Grand Galleria Detective Agency, Ltd.* Not yet decided whether this is the English title (with a subtitle to come) or the subtitle under a case-name title; ask before putting it on a page.
   - Publisher: Porchester Publishing, London — https://porchesterpublishing.com
 
 ## Languages
