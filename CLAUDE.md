@@ -21,14 +21,14 @@ Source for francescodurazzo.com, the author site of Francesco Durazzo.
 
 ## Languages
 
-- When the site goes bilingual, it is English and Brazilian Portuguese.
+- Three language versions: English, Brazilian Portuguese and Italian. Italian is mostly symbolic for now; it is there because of the kinds of books Bruno plans to publish later.
 - Default language: Brazilian Portuguese for visitors whose browser prefers Brazilian Portuguese or who are located in Brazil; English for everyone else.
 - Implement the default with a small Cloudflare Pages Function at the site root (a `functions/` folder next to `site/`, not inside it), reading the browser's Accept-Language header and Cloudflare's visitor country. Static files alone can't see the visitor's country.
 - A visible language switch must always override the automatic choice, and the visitor's choice should be remembered.
 - Decided: browsers preferring any Portuguese (pt, pt-BR, pt-PT) get Brazilian Portuguese; the book is in Brazilian Portuguese.
-- Each language has its own address: `/en/` and `/pt-br/` (pages in `site/en/` and `site/pt-br/`). The root `/` is handled by `functions/index.js`, which redirects in this order: the visitor's remembered choice (`lang` cookie, set by the switch), located in Brazil, browser language preference, then English. `site/index.html` is only a plain language chooser in case the function isn't running.
+- Each language has its own address: `/en/`, `/pt-br/` and `/it/` (pages in `site/en/`, `site/pt-br/`, `site/it/`). Browsers preferring Italian get `/it/`. The root `/` is handled by `functions/index.js`, which redirects in this order: the visitor's remembered choice (`lang` cookie, set by the switch), located in Brazil, browser language preference, then English. `site/index.html` is only a plain language chooser in case the function isn't running.
 - Every page carries `hreflang` links to all language versions plus `x-default` pointing at `/`.
-- Possible later: Italian at `/it/` (nice to have, not decided).
+- Book status (approved by Bruno): all three versions say the book is coming soon (Coming soon / Em breve / Prossimamente). Expected sequence: first a Brazilian Portuguese edition to buy (shown on the PT page, nothing to buy on EN and IT yet), later an English edition, later still an Italian one. Each page's purchase links follow that sequence.
 
 ## Design
 

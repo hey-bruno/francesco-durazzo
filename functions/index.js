@@ -4,19 +4,21 @@
 //   1. A language the visitor picked with the switch (the "lang" cookie).
 //   2. Visitors located in Brazil get Brazilian Portuguese.
 //   3. The visitor's browser languages, in their order of preference:
-//      any Portuguese (pt, pt-BR, pt-PT) -> Brazilian Portuguese, English -> English.
+//      any Portuguese (pt, pt-BR, pt-PT) -> Brazilian Portuguese, English -> English,
+//      Italian -> Italian.
 //   4. Everyone else gets English.
 //
-// To add a language later (e.g. Italian): create site/it/, add "it" to SUPPORTED
-// and a line to fromBrowserTag, and add the hreflang links to every page.
+// To add a language: create site/<code>/, add the code to SUPPORTED and a line to
+// fromBrowserTag, and add its hreflang link and switch link to every page.
 
-const SUPPORTED = ["en", "pt-br"];
+const SUPPORTED = ["en", "pt-br", "it"];
 const DEFAULT = "en";
 
 function fromBrowserTag(tag) {
   const primary = tag.toLowerCase().split("-")[0];
   if (primary === "pt") return "pt-br";
   if (primary === "en") return "en";
+  if (primary === "it") return "it";
   return null;
 }
 
