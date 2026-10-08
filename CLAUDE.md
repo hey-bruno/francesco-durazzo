@@ -1,0 +1,33 @@
+# Francesco Durazzo — author website
+
+Source for francescodurazzo.com, the author site of Francesco Durazzo.
+
+## What this site is for
+
+- The author's public face: who Francesco Durazzo is, his books, and where to find them.
+- Francesco Durazzo is a pen name. The pen name exists so a search for the author doesn't lead to Bruno's day job; it is not a secret identity. Don't mention Bruno's employer, job title or real name on the site unless he asks.
+- English-first, with the book titles in their original language.
+- Audience: readers first, then booksellers, publishers and press.
+
+## Facts and content
+
+- Never invent facts. No biography details, dates, prices, availability, quotes, reviews or award claims that Bruno hasn't written or approved.
+- No placeholders, "coming soon" filler, lorem ipsum or bracketed notes on a page that goes live. If content is missing, ask Bruno in the chat instead.
+- Copy comes from the approved files in `~/grandes-galerias/publicacao/` (decisions, bio, sinopse and so on). Treat `decisoes.md` there as the source of truth for names and decisions.
+- Settled facts so far:
+  - Author: Francesco Durazzo (pen name).
+  - First book: *Agência de Detetives Grandes Galerias Ltda.* (Brazilian Portuguese).
+  - Publisher: Porchester Publishing, London — https://porchesterpublishing.com
+
+## Design
+
+- Current look: a single centred page, serif type (Georgia stack), warm paper background with near-black ink, and a dark-mode version of both. It deliberately matches the Porchester Publishing site; keep the two consistent.
+- Plain, understated tone. No marketing superlatives.
+- Pages must work on a phone first (16px side margins, no horizontal scrolling).
+
+## Tech and deploys
+
+- Plain static HTML and CSS, no build step. Move to Astro only when the site outgrows a few pages, and ask first.
+- Hosted on Cloudflare Pages, project `francesco-durazzo`, connected to this GitHub repo (`hey-bruno/francesco-durazzo`).
+- Pushing to `main` deploys to production. Make changes on a branch: Cloudflare publishes each branch to a preview address for review before merging.
+- Pushes go out as the GitHub account `hey-bruno`, not Bruno's work account.
