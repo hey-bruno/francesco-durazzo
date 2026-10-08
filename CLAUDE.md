@@ -16,8 +16,8 @@ Source for francescodurazzo.com, the author site of Francesco Durazzo.
 - Copy comes from the approved files in `~/grandes-galerias/publicacao/` (decisions, bio, sinopse and so on). Treat `decisoes.md` there as the source of truth for names and decisions.
 - Settled facts so far:
   - Author: Francesco Durazzo (pen name).
-  - First book: *Agência de Detetives Grandes Galerias Ltda.* (Brazilian Portuguese).
-  - English edition name: *The Grand Galleria Detective Agency, Ltd.* Not yet decided whether this is the English title (with a subtitle to come) or the subtitle under a case-name title; ask before putting it on a page.
+  - First book: *Agência de Detetives Grandes Galerias Ltda.: O Caso da Fita Cassete* (Brazilian Portuguese).
+  - English edition: *The Grand Galleria Detective Agency, Ltd.: The Case of the Cassette Tape*.
   - Publisher: Porchester Publishing, London — https://porchesterpublishing.com
 
 ## Languages
