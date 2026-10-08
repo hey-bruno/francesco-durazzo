@@ -71,6 +71,7 @@ blockquote p:first-child { margin-top: 0; } blockquote p:last-child { margin-bot
 /* Author: taped polaroid */
 .author { display: grid; gap: 2rem; }
 .photo { width: min(72%, 16rem); aspect-ratio: 4 / 5; border: 10px solid var(--sheet); border-bottom-width: 34px; box-shadow: 5px 5px 0 var(--ink); transform: rotate(2deg); margin-top: .5rem; }
+.photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
 @media (min-width: 36rem) { .author { grid-template-columns: 12rem 1fr; align-items: start; } .photo { width: 100%; } }
 .author p:first-child { margin-top: 0; }
 
