@@ -19,6 +19,14 @@ Source for francescodurazzo.com, the author site of Francesco Durazzo.
   - First book: *Agência de Detetives Grandes Galerias Ltda.* (Brazilian Portuguese).
   - Publisher: Porchester Publishing, London — https://porchesterpublishing.com
 
+## Languages
+
+- When the site goes bilingual, it is English and Brazilian Portuguese.
+- Default language: Brazilian Portuguese for visitors whose browser prefers Brazilian Portuguese or who are located in Brazil; English for everyone else.
+- Implement the default with a small Cloudflare Pages Function at the site root (a `functions/` folder next to `site/`, not inside it), reading the browser's Accept-Language header and Cloudflare's visitor country. Static files alone can't see the visitor's country.
+- A visible language switch must always override the automatic choice, and the visitor's choice should be remembered.
+- Undecided, ask Bruno before building: what visitors whose browser prefers European Portuguese should see.
+
 ## Design
 
 - Current look: a single centred page, serif type (Georgia stack), warm paper background with near-black ink, and a dark-mode version of both. It deliberately matches the Porchester Publishing site; keep the two consistent.
