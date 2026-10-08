@@ -11,57 +11,10 @@
 <link rel="alternate" hreflang="x-default" href="https://francescodurazzo.com/">
 <title>Francesco Durazzo</title>
 <meta name="description" content="Francesco Durazzo, autor de Agência de Detetives Grandes Galerias Ltda.">
-<style>
-  :root { --ink: #1a1a1a; --paper: #f7f5f0; --muted: #6b6b6b; --rule: #d9d5cc; --box: #e4e0d7; }
-  @media (prefers-color-scheme: dark) { :root { --ink: #ecebe6; --paper: #161616; --muted: #9a9a9a; --rule: #333; --box: #2a2a2a; } }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body { margin: 0; background: var(--paper); color: var(--ink); font-family: Georgia, "Times New Roman", serif; line-height: 1.6; font-size: 1.0625rem; }
-  a { color: inherit; }
-  .wrap { max-width: 40rem; margin: 0 auto; padding: 0 16px; }
-
-  header { border-bottom: 1px solid var(--rule); }
-  header .wrap { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem 1rem; padding-top: 1rem; padding-bottom: 1rem; }
-  .name { font-size: 1.125rem; text-decoration: none; }
-  nav { display: flex; flex-wrap: wrap; gap: .25rem 1rem; font-size: .875rem; }
-  nav a { text-decoration: none; color: var(--muted); }
-  nav a:hover { color: var(--ink); }
-  .lang { font-size: .8rem; letter-spacing: .1em; color: var(--muted); }
-  .lang a { text-decoration: none; }
-  .lang [aria-current] { color: var(--ink); text-decoration: underline; }
-
-  section { padding: 3.5rem 0; border-bottom: 1px solid var(--rule); }
-  h1, h2 { font-weight: normal; }
-  h2 { font-size: .8rem; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); margin: 0 0 1.5rem; }
-
-  .hero { text-align: center; }
-  .ph { background: var(--box); color: var(--muted); display: flex; align-items: center; justify-content: center; font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; }
-  .cover { width: min(60%, 15rem); aspect-ratio: 2 / 3; margin: 0 auto 2rem; }
-  .hero h1 { font-style: italic; font-size: clamp(1.6rem, 5vw, 2.25rem); margin: 0; line-height: 1.25; }
-  .hook { font-size: 1.2rem; margin: 1rem 0 0; }
-  .status { color: var(--muted); font-size: .9rem; margin: 1rem 0 0; }
-  .btn { display: inline-block; margin-top: 1.75rem; padding: .7rem 1.4rem; border: 1px solid var(--ink); text-decoration: none; font-size: .95rem; }
-  .btn:hover { background: var(--ink); color: var(--paper); }
-
-  blockquote { margin: 0; padding-left: 1.25rem; border-left: 2px solid var(--rule); font-style: italic; }
-
-  .author { display: grid; gap: 1.5rem; }
-  .photo { width: min(70%, 16rem); aspect-ratio: 4 / 5; }
-  @media (min-width: 36rem) { .author { grid-template-columns: 12rem 1fr; align-items: start; } .photo { width: 100%; } }
-  .author p:first-child { margin-top: 0; }
-
-  .links { list-style: none; padding: 0; margin: 0; }
-  .links li { padding: .6rem 0; border-top: 1px solid var(--rule); }
-  .links li:last-child { border-bottom: 1px solid var(--rule); }
-
-  form { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
-  input[type=email] { flex: 1 1 14rem; min-width: 0; padding: .7rem .8rem; font: inherit; font-size: .95rem; background: transparent; color: var(--ink); border: 1px solid var(--rule); }
-  button { padding: .7rem 1.4rem; font: inherit; font-size: .95rem; background: var(--ink); color: var(--paper); border: 1px solid var(--ink); cursor: pointer; }
-  .small { color: var(--muted); font-size: .85rem; }
-
-  footer { padding: 2rem 0 3rem; color: var(--muted); font-size: .85rem; text-align: center; }
-  footer p { margin: .25rem 0; }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap">
+<link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
 
@@ -82,7 +35,8 @@
 
   <section class="hero">
     <div class="wrap">
-      <div class="cover ph" role="img" aria-label="Capa do livro">Capa</div>
+      <p class="ransom" aria-label="Francesco Durazzo"><span aria-hidden="true"><span class="w"><span class="a" style="--r:3deg">F</span><span class="b" style="--r:-3deg">r</span><span class="c" style="--r:4deg">a</span><span class="d" style="--r:-6deg">n</span><span class="e" style="--r:-4deg">c</span><span class="f" style="--r:-4deg">e</span><span class="c" style="--r:3deg">s</span><span class="a" style="--r:-6deg">c</span><span class="d" style="--r:-2deg">o</span></span> <span class="w"><span class="b" style="--r:-6deg">D</span><span class="e" style="--r:-4deg">u</span><span class="f" style="--r:4deg">r</span><span class="a" style="--r:4deg">a</span><span class="c" style="--r:-4deg">z</span><span class="b" style="--r:-2deg">z</span><span class="d" style="--r:-4deg">o</span></span></span></p>
+      <div class="cover ph taped" role="img" aria-label="Capa do livro">Capa</div>
       <h1>Agência de Detetives Grandes Galerias Ltda.</h1>
       <p class="hook">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
       <p class="status">Em breve</p>
@@ -114,7 +68,7 @@
     <div class="wrap">
       <h2>Sobre o autor</h2>
       <div class="author">
-        <div class="photo ph" role="img" aria-label="Foto do autor">Foto</div>
+        <div class="photo ph taped" role="img" aria-label="Foto do autor">Foto</div>
         <div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
           <p>Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper.</p>

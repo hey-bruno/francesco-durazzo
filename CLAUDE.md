@@ -32,8 +32,8 @@ Source for francescodurazzo.com, the author site of Francesco Durazzo.
 
 ## Design
 
-- Current look: a single centred page, serif type (Georgia stack), warm paper background with near-black ink, and a dark-mode version of both. It deliberately matches the Porchester Publishing site; keep the two consistent.
-- Plain, understated tone. No marketing superlatives.
+- Look (branch punk-look, proposed): a photocopied zine / case-file style reflecting the book (1994–95 underground punk scene, mystery/thriller): ransom-note name, Anton + Special Elite + Courier Prime (Google Fonts), paper-grain texture, black, off-white, red and highlighter yellow, light and dark versions. Shared styles live in `site/assets/style.css`. This departs from the Porchester Publishing look; Bruno asked for the author site to reflect the book.
+- Copy tone stays plain and understated. No marketing superlatives.
 - Pages must work on a phone first (16px side margins, no horizontal scrolling).
 
 ## Tech and deploys
