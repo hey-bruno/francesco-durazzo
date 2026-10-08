@@ -41,5 +41,6 @@ Source for francescodurazzo.com, the author site of Francesco Durazzo.
 
 - Plain static HTML and CSS, no build step. Everything public lives in `site/`; Cloudflare publishes only that folder. Keep notes and instructions (like this file) outside `site/`, because anything inside it is public. Move to Astro only when the site outgrows a few pages, and ask first.
 - Hosted on Cloudflare Pages, project `francesco-durazzo`, connected to this GitHub repo (`hey-bruno/francesco-durazzo`).
+- Whenever `site/assets/style.css` changes, bump the version in its link on every page (`/assets/style.css?v=N`), or browsers keep showing the old stylesheet from cache.
 - Pushing to `main` deploys to production. Make changes on a branch: Cloudflare publishes each branch to a preview address for review before merging.
 - Pushes go out as the GitHub account `hey-bruno`, not Bruno's work account.
