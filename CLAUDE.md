@@ -6,7 +6,7 @@ Source for francescodurazzo.com, the author site of Francesco Durazzo.
 
 - The author's public face: who Francesco Durazzo is, his books, and where to find them.
 - Francesco Durazzo is a pen name. The pen name exists so a search for the author doesn't lead to Bruno's day job; it is not a secret identity. Don't mention Bruno's employer, job title or real name on the site unless he asks.
-- English-first, with the book titles in their original language.
+- English-first. The Portuguese page shows the book's Portuguese title and cover; the English and Italian pages show the English title and cover.
 - Audience: readers first, then booksellers, publishers and press.
 
 ## Facts and content
@@ -17,7 +17,7 @@ Source for francescodurazzo.com, the author site of Francesco Durazzo.
 - Settled facts so far:
   - Author: Francesco Durazzo (pen name).
   - First book: *Agência de Detetives Grandes Galerias Ltda.*, subtitle *Livro 1: Frequência Maldita* (Brazilian Portuguese).
-  - English edition: *The Grand Galleria Detective Agency, Ltd.* (English subtitle not decided yet).
+  - English edition: *The Grand Galleria Detective Agency, Ltd.*, subtitle *Book 1: Cursed Frequency*.
   - Publisher: Porchester Publishing, London — https://porchesterpublishing.com
 
 ## Languages
