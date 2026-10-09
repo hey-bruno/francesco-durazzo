@@ -33,7 +33,7 @@ Source for francescodurazzo.com, the author site of Francesco Durazzo.
 
 ## Design
 
-- Look: a photocopied zine / case-file style reflecting the book (1994–95 underground punk scene, mystery/thriller): ransom-note name, Anton + Special Elite + Courier Prime (Google Fonts), paper-grain texture. Colours follow the book cover and the site is dark only: rich black `#0d0c0b`, paperback cream `#f2e8d5`, blood red `#d7262e`, oxblood shadow `#6e1027`, mustard `#f2c230`. Shared styles live in `site/assets/style.css`. Deliberately different from the Porchester Publishing site: the two sites are not meant to look the same.
+- Look: a photocopied zine / case-file style reflecting the book (1994–95 underground punk scene, mystery/thriller): ransom-note name, Anton + Special Elite + Courier Prime (Google Fonts), paper-grain texture. Dark only, like white toner photocopied on black: near-black `#121211`, off-white `#e8e6df`, highlighter yellow `#e8e337`, xerox red `#ff3b3b`. Don't copy the cover's own look (cream, oxblood shadows, big condensed title); the cover image sits on the page and the page should frame it, not repeat it. Shared styles live in `site/assets/style.css`. Deliberately different from the Porchester Publishing site: the two sites are not meant to look the same.
 - Copy tone stays plain and understated. No marketing superlatives.
 - Pages must work on a phone first (16px side margins, no horizontal scrolling).
 

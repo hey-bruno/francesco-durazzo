@@ -1,10 +1,10 @@
 /* Francesco Durazzo — photocopied zine / case-file look (1994–95 underground punk, mystery). */
-/* Palette taken from the cover: rich black, paperback cream, oxblood shadow, blood red, mustard. Dark only. */
+/* Dark photocopy: white toner on black paper, highlighter yellow, xerox red. Dark only. */
 :root {
   color-scheme: dark;
-  --paper: #0d0c0b; --sheet: #1a1816; --ink: #f2e8d5; --muted: #a8a29a;
-  --accent: #d7262e; --shadow: #6e1027; --hi: #f2c230; --box: #26231f; --tape: rgba(242, 232, 213, .3);
-  --grain-blend: screen; --strip: #060504; --strip-ink: #f2e8d5;
+  --paper: #121211; --sheet: #1e1e1c; --ink: #e8e6df; --muted: #8e8b84;
+  --accent: #ff3b3b; --hi: #e8e337; --shadow: #3a3a37; --box: #2a2a27; --tape: rgba(232, 230, 223, .22);
+  --grain-blend: screen; --strip: #000; --strip-ink: #e8e6df;
   --display: "Anton", Impact, "Arial Narrow", sans-serif;
   --type: "Special Elite", "Courier New", monospace;
   --body: "Courier Prime", "Courier New", monospace;
@@ -22,7 +22,7 @@ a { color: inherit; }
 /* Header: black strip like a flyer masthead */
 header { background: var(--strip); color: var(--strip-ink); border-bottom: 1px solid color-mix(in srgb, var(--strip-ink) 15%, transparent); }
 header .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1rem; padding-top: .8rem; padding-bottom: .8rem; }
-.name { color: var(--hi); font-family: var(--display); text-transform: uppercase; letter-spacing: .08em; font-size: 1.15rem; text-decoration: none; }
+.name { font-family: var(--display); text-transform: uppercase; letter-spacing: .08em; font-size: 1.15rem; text-decoration: none; }
 nav { display: flex; flex-wrap: wrap; gap: .25rem 1rem; font-family: var(--type); font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; }
 nav a { text-decoration: none; opacity: .75; }
 nav a:hover { opacity: 1; text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
@@ -35,7 +35,7 @@ main { counter-reset: file; }
 section { padding: 3.5rem 0; border-bottom: 2px dashed color-mix(in srgb, var(--ink) 35%, transparent); }
 h1, h2 { font-weight: normal; }
 h2 { counter-increment: file; display: inline-block; margin: 0 0 1.75rem; padding: .25em .7em .2em; background: var(--ink); color: var(--paper);
-     font-family: var(--display); font-size: 1rem; text-transform: uppercase; letter-spacing: .14em; transform: rotate(-1.5deg); box-shadow: 3px 3px 0 var(--shadow); }
+     font-family: var(--display); font-size: 1rem; text-transform: uppercase; letter-spacing: .14em; transform: rotate(-1.5deg); box-shadow: 3px 3px 0 var(--accent); }
 h2::before { content: counter(file, decimal-leading-zero) " / "; color: var(--accent); }
 
 /* Hero: gig-poster */
@@ -53,16 +53,25 @@ h2::before { content: counter(file, decimal-leading-zero) " / "; color: var(--ac
 .ph { position: relative; display: flex; align-items: center; justify-content: center; color: var(--muted); font-family: var(--type); font-size: .8rem; letter-spacing: .15em; text-transform: uppercase;
       background-color: var(--box); background-image: radial-gradient(color-mix(in srgb, var(--ink) 22%, transparent) 1px, transparent 1.4px); background-size: 6px 6px; }
 .taped::before { content: ""; position: absolute; top: -.85rem; left: 50%; width: 6.5rem; height: 1.7rem; background: var(--tape); transform: translateX(-50%) rotate(-4deg); }
-.cover { position: relative; width: min(62%, 15rem); aspect-ratio: 2 / 3; margin: 0 auto 2.25rem; transform: rotate(-2deg); box-shadow: 7px 7px 0 var(--shadow); }
+.case { display: grid; gap: 2.25rem; justify-items: center; }
+.cover { position: relative; width: min(62%, 15rem); aspect-ratio: 2 / 3; transform: rotate(-2deg); box-shadow: 8px 8px 0 var(--hi); }
+.cover.taped::before { left: 2%; top: -.4rem; width: 5rem; transform: rotate(-32deg); z-index: 1; } /* corner tape, off the author name */
 .cover img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.hero h1 { font-family: var(--display); text-transform: uppercase; font-size: clamp(1.9rem, 7vw, 3.1rem); line-height: 1.05; letter-spacing: .01em; margin: 0; text-shadow: 3px 3px 0 var(--shadow); }
-.subtitle { font-family: var(--display); text-transform: uppercase; color: var(--accent); font-size: clamp(1.3rem, 5vw, 1.8rem); line-height: 1.1; margin: .6rem 0 0; text-shadow: 2px 2px 0 var(--shadow); }
-.hook { font-size: 1.15rem; margin: 1.25rem auto 0; max-width: 32rem; }
+.file { max-width: 30rem; }
+.hero h1 { font-family: var(--type); font-size: clamp(1.25rem, 4.5vw, 1.6rem); line-height: 1.3; margin: 0; }
+.subtitle { display: inline-block; margin: .7rem 0 0; font-family: var(--type); font-size: clamp(1.1rem, 4vw, 1.35rem); transform: rotate(-1deg); background: var(--hi); color: #121211; padding: .05em .35em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.hook { font-size: 1.05rem; margin: 1.5rem 0 0; color: color-mix(in srgb, var(--ink) 85%, transparent); }
 .status { display: inline-block; margin: 1.75rem 0 0; padding: .3em .9em; border: 3px solid var(--accent); color: var(--accent); font-family: var(--type); font-size: 1.05rem;
           text-transform: uppercase; letter-spacing: .22em; transform: rotate(-6deg); opacity: .92; }
 .hero .btn { display: table; margin: 1.75rem auto 0; }
-.btn { padding: .7rem 1.5rem; background: var(--accent); color: #fff; font-family: var(--display); text-transform: uppercase; letter-spacing: .12em; text-decoration: none; box-shadow: 4px 4px 0 var(--shadow); }
-.btn:hover { transform: translate(-1px, -1px); box-shadow: 6px 6px 0 var(--shadow); }
+.btn { padding: .7rem 1.5rem; background: var(--ink); color: var(--paper); font-family: var(--display); text-transform: uppercase; letter-spacing: .12em; text-decoration: none; box-shadow: 4px 4px 0 var(--accent); }
+.btn:hover { transform: translate(-1px, -1px); box-shadow: 6px 6px 0 var(--accent); }
+@media (min-width: 40rem) {
+  .hero .wrap { max-width: 50rem; }
+  .case { grid-template-columns: 15rem 1fr; align-items: center; justify-items: start; text-align: left; gap: 3rem; }
+  .cover { width: 100%; }
+  .hero .btn { margin: 1.75rem 0 0; }
+}
 
 /* Excerpt: a typed page pinned to the wall */
 blockquote { margin: 0; padding: 1.5rem 1.4rem; background: var(--sheet); font-family: var(--type); box-shadow: 5px 5px 0 var(--shadow); transform: rotate(.6deg); position: relative; }
