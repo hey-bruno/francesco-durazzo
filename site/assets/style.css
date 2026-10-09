@@ -1,14 +1,13 @@
 /* Francesco Durazzo — photocopied zine / case-file look (1994–95 underground punk, mystery). */
+/* Palette taken from the cover: rich black, paperback cream, oxblood shadow, blood red, mustard. Dark only. */
 :root {
-  --paper: #e9e7df; --sheet: #f6f5ef; --ink: #121212; --muted: #57554f;
-  --accent: #d90a14; --hi: #f1e33a; --box: #cfccc2; --tape: rgba(236, 226, 186, .78);
-  --grain-blend: multiply; --strip: #121212; --strip-ink: #e9e7df;
+  color-scheme: dark;
+  --paper: #0d0c0b; --sheet: #1a1816; --ink: #f2e8d5; --muted: #a8a29a;
+  --accent: #d7262e; --shadow: #6e1027; --hi: #f2c230; --box: #26231f; --tape: rgba(242, 232, 213, .3);
+  --grain-blend: screen; --strip: #060504; --strip-ink: #f2e8d5;
   --display: "Anton", Impact, "Arial Narrow", sans-serif;
   --type: "Special Elite", "Courier New", monospace;
   --body: "Courier Prime", "Courier New", monospace;
-}
-@media (prefers-color-scheme: dark) {
-  :root { --paper: #0f0f0f; --sheet: #1b1b1a; --ink: #ece8dc; --muted: #9b978c; --accent: #ff3b3b; --hi: #e6d630; --box: #2b2b29; --tape: rgba(220, 210, 170, .35); --grain-blend: screen; --strip: #000; --strip-ink: #ece8dc; }
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -23,7 +22,7 @@ a { color: inherit; }
 /* Header: black strip like a flyer masthead */
 header { background: var(--strip); color: var(--strip-ink); border-bottom: 1px solid color-mix(in srgb, var(--strip-ink) 15%, transparent); }
 header .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1rem; padding-top: .8rem; padding-bottom: .8rem; }
-.name { font-family: var(--display); text-transform: uppercase; letter-spacing: .08em; font-size: 1.15rem; text-decoration: none; }
+.name { color: var(--hi); font-family: var(--display); text-transform: uppercase; letter-spacing: .08em; font-size: 1.15rem; text-decoration: none; }
 nav { display: flex; flex-wrap: wrap; gap: .25rem 1rem; font-family: var(--type); font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; }
 nav a { text-decoration: none; opacity: .75; }
 nav a:hover { opacity: 1; text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
@@ -36,8 +35,8 @@ main { counter-reset: file; }
 section { padding: 3.5rem 0; border-bottom: 2px dashed color-mix(in srgb, var(--ink) 35%, transparent); }
 h1, h2 { font-weight: normal; }
 h2 { counter-increment: file; display: inline-block; margin: 0 0 1.75rem; padding: .25em .7em .2em; background: var(--ink); color: var(--paper);
-     font-family: var(--display); font-size: 1rem; text-transform: uppercase; letter-spacing: .14em; transform: rotate(-1.5deg); box-shadow: 3px 3px 0 var(--accent); }
-h2::before { content: counter(file, decimal-leading-zero) " / "; color: var(--hi); }
+     font-family: var(--display); font-size: 1rem; text-transform: uppercase; letter-spacing: .14em; transform: rotate(-1.5deg); box-shadow: 3px 3px 0 var(--shadow); }
+h2::before { content: counter(file, decimal-leading-zero) " / "; color: var(--accent); }
 
 /* Hero: gig-poster */
 .hero { text-align: center; padding-top: 2.5rem; }
@@ -54,24 +53,24 @@ h2::before { content: counter(file, decimal-leading-zero) " / "; color: var(--hi
 .ph { position: relative; display: flex; align-items: center; justify-content: center; color: var(--muted); font-family: var(--type); font-size: .8rem; letter-spacing: .15em; text-transform: uppercase;
       background-color: var(--box); background-image: radial-gradient(color-mix(in srgb, var(--ink) 22%, transparent) 1px, transparent 1.4px); background-size: 6px 6px; }
 .taped::before { content: ""; position: absolute; top: -.85rem; left: 50%; width: 6.5rem; height: 1.7rem; background: var(--tape); transform: translateX(-50%) rotate(-4deg); }
-.cover { position: relative; width: min(62%, 15rem); aspect-ratio: 2 / 3; margin: 0 auto 2.25rem; transform: rotate(-2deg); box-shadow: 7px 7px 0 var(--ink); }
+.cover { position: relative; width: min(62%, 15rem); aspect-ratio: 2 / 3; margin: 0 auto 2.25rem; transform: rotate(-2deg); box-shadow: 7px 7px 0 var(--shadow); }
 .cover img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.hero h1 { font-family: var(--display); text-transform: uppercase; font-size: clamp(1.9rem, 7vw, 3.1rem); line-height: 1.05; letter-spacing: .01em; margin: 0; }
-.subtitle { font-family: var(--type); font-size: clamp(1.1rem, 4vw, 1.4rem); margin: .6rem 0 0; }
+.hero h1 { font-family: var(--display); text-transform: uppercase; font-size: clamp(1.9rem, 7vw, 3.1rem); line-height: 1.05; letter-spacing: .01em; margin: 0; text-shadow: 3px 3px 0 var(--shadow); }
+.subtitle { font-family: var(--display); text-transform: uppercase; color: var(--accent); font-size: clamp(1.3rem, 5vw, 1.8rem); line-height: 1.1; margin: .6rem 0 0; text-shadow: 2px 2px 0 var(--shadow); }
 .hook { font-size: 1.15rem; margin: 1.25rem auto 0; max-width: 32rem; }
 .status { display: inline-block; margin: 1.75rem 0 0; padding: .3em .9em; border: 3px solid var(--accent); color: var(--accent); font-family: var(--type); font-size: 1.05rem;
           text-transform: uppercase; letter-spacing: .22em; transform: rotate(-6deg); opacity: .92; }
 .hero .btn { display: table; margin: 1.75rem auto 0; }
-.btn { padding: .7rem 1.5rem; background: var(--ink); color: var(--paper); font-family: var(--display); text-transform: uppercase; letter-spacing: .12em; text-decoration: none; box-shadow: 4px 4px 0 var(--accent); }
-.btn:hover { transform: translate(-1px, -1px); box-shadow: 6px 6px 0 var(--accent); }
+.btn { padding: .7rem 1.5rem; background: var(--accent); color: #fff; font-family: var(--display); text-transform: uppercase; letter-spacing: .12em; text-decoration: none; box-shadow: 4px 4px 0 var(--shadow); }
+.btn:hover { transform: translate(-1px, -1px); box-shadow: 6px 6px 0 var(--shadow); }
 
 /* Excerpt: a typed page pinned to the wall */
-blockquote { margin: 0; padding: 1.5rem 1.4rem; background: var(--sheet); font-family: var(--type); box-shadow: 5px 5px 0 var(--ink); transform: rotate(.6deg); position: relative; }
+blockquote { margin: 0; padding: 1.5rem 1.4rem; background: var(--sheet); font-family: var(--type); box-shadow: 5px 5px 0 var(--shadow); transform: rotate(.6deg); position: relative; }
 blockquote p:first-child { margin-top: 0; } blockquote p:last-child { margin-bottom: 0; }
 
 /* Author: taped polaroid */
 .author { display: grid; gap: 2rem; }
-.photo { width: min(72%, 16rem); aspect-ratio: 4 / 5; border: 10px solid var(--sheet); border-bottom-width: 34px; box-shadow: 5px 5px 0 var(--ink); transform: rotate(2deg); margin-top: .5rem; }
+.photo { width: min(72%, 16rem); aspect-ratio: 4 / 5; border: 10px solid var(--ink); border-bottom-width: 34px; box-shadow: 5px 5px 0 var(--shadow); transform: rotate(2deg); margin-top: .5rem; }
 .photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
 @media (min-width: 36rem) { .author { grid-template-columns: 12rem 1fr; align-items: start; } .photo { width: 100%; } }
 .author p:first-child { margin-top: 0; }
@@ -83,7 +82,7 @@ blockquote p:first-child { margin-top: 0; } blockquote p:last-child { margin-bot
 
 form { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1rem; }
 input[type=email] { flex: 1 1 14rem; min-width: 0; padding: .7rem .8rem; font: inherit; font-size: .95rem; background: var(--sheet); color: var(--ink); border: 2px solid var(--ink); border-radius: 0; }
-button { padding: .7rem 1.4rem; font-family: var(--display); text-transform: uppercase; letter-spacing: .12em; font-size: .95rem; background: var(--accent); color: #fff; border: 2px solid var(--ink); border-radius: 0; cursor: pointer; box-shadow: 3px 3px 0 var(--ink); }
+button { padding: .7rem 1.4rem; font-family: var(--display); text-transform: uppercase; letter-spacing: .12em; font-size: .95rem; background: var(--accent); color: #fff; border: 2px solid var(--ink); border-radius: 0; cursor: pointer; box-shadow: 3px 3px 0 var(--shadow); }
 .small { color: var(--muted); font-size: .85rem; }
 
 footer { background: var(--strip); color: var(--strip-ink); padding: 2rem 0 2.5rem; font-family: var(--type); font-size: .85rem; text-align: center; letter-spacing: .05em; }
