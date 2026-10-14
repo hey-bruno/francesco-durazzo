@@ -1,0 +1,4 @@
+# Buy links. Change the destination here when the book goes on sale; links in old coverage keep working.
+# Before launch they point to the "where to buy" section. At launch: the Amazon.com.br page (PT) and the store page (EN).
+/comprar  /pt-br/#buy  302
+/buy      /en/#buy     302
