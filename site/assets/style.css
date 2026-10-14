@@ -102,3 +102,10 @@ button { padding: .7rem 1.4rem; font-family: var(--display); text-transform: upp
 
 footer { background: var(--strip); color: var(--strip-ink); padding: 2rem 0 2.5rem; font-family: var(--type); font-size: .85rem; text-align: center; letter-spacing: .05em; }
 footer p { margin: .25rem 0; }
+
+/* Cover lightbox */
+a.zoom { display: block; width: 100%; height: 100%; cursor: zoom-in; }
+.lightbox { padding: 0; border: 0; background: transparent; max-width: 100vw; max-height: 100vh; width: 100vw; height: 100vh; cursor: zoom-out; } .lightbox[open] { display: flex; align-items: center; justify-content: center; }
+.lightbox::backdrop { background: rgba(10, 10, 9, .92); }
+.lightbox img { display: block; width: auto; height: auto; max-width: 94vw; max-height: 94vh; margin: 0; box-shadow: 0 12px 40px rgba(0, 0, 0, .6); }
+.lightbox button { position: fixed; top: .9rem; right: 1rem; padding: .3rem .7rem; border: 0; background: rgba(255, 255, 255, .12); color: #fff; font: inherit; font-size: 1.4rem; line-height: 1; cursor: pointer; }

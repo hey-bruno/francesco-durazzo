@@ -40,7 +40,7 @@
     <div class="wrap">
       <p class="ransom" aria-label="Francesco Durazzo"><span aria-hidden="true"><span class="w"><span class="a" style="--r:3deg">F</span><span class="b" style="--r:-3deg">r</span><span class="c" style="--r:4deg">a</span><span class="d" style="--r:-6deg">n</span><span class="e" style="--r:-4deg">c</span><span class="f" style="--r:-4deg">e</span><span class="c" style="--r:3deg">s</span><span class="a" style="--r:-6deg">c</span><span class="d" style="--r:-2deg">o</span></span> <span class="w"><span class="b" style="--r:-6deg">D</span><span class="e" style="--r:-4deg">u</span><span class="f" style="--r:4deg">r</span><span class="a" style="--r:4deg">a</span><span class="c" style="--r:-4deg">z</span><span class="b" style="--r:-2deg">z</span><span class="d" style="--r:-4deg">o</span></span></span></p>
       <div class="case">
-        <div class="cover taped"><img src="/assets/img/cover-en-v4.jpg" alt="Copertina di The Grand Galleria Detective Agency, Ltd.: Book 1, Cursed Frequency" width="1024" height="1536" style="display:block;width:100%;height:100%;object-fit:cover"></div>
+        <div class="cover taped"><a class="zoom" href="/assets/img/cover-en-v4-large.jpg" aria-label="Vedi la copertina a grandezza piena"><img src="/assets/img/cover-en-v4.jpg" alt="Copertina di The Grand Galleria Detective Agency, Ltd.: Book 1, Cursed Frequency" width="1024" height="1536" style="display:block;width:100%;height:100%;object-fit:cover"></a></div>
         <div class="file">
         <h1>The Grand Galleria Detective Agency, Ltd.</h1>
         <p class="subtitle">Book 1: Cursed Frequency</p>
@@ -151,6 +151,20 @@
       document.cookie = 'lang=' + a.dataset.lang + '; Max-Age=31536000; Path=/; SameSite=Lax; Secure';
     });
   });
+</script>
+<dialog id="lightbox" class="lightbox"><button type="button" aria-label="Chiudi">×</button><img alt=""></dialog>
+<script>
+  // Cover lightbox: the link opens the large cover in a full-page dialog (without JS it just opens the image).
+  (function () {
+    var d = document.getElementById('lightbox'); if (!d || !d.showModal) return;
+    var img = d.querySelector('img');
+    document.querySelectorAll('a.zoom').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault(); img.src = a.href; img.alt = a.querySelector('img').alt; d.showModal();
+      });
+    });
+    d.addEventListener('click', function () { d.close(); });
+  })();
 </script>
 </body>
 </html>
