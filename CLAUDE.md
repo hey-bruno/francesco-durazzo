@@ -37,6 +37,8 @@ Source for francescodurazzo.com, the author site of Francesco Durazzo.
 - Copy tone stays plain and understated. No marketing superlatives.
 - Pages must work on a phone first (16px side margins, no horizontal scrolling).
 
+- Store buttons: the hero shows one button per store (store name only, no logos, because of the stores' brand rules). Before launch they are faded, non-clickable `<span class="store">`; at launch turn each into `<a class="store" href="…">` with that country's store link. When `site/assets/style.css` changes, bump its `?v=` number in every page.
+
 ## Tech and deploys
 
 - Plain static HTML and CSS, no build step. Everything public lives in `site/`; Cloudflare publishes only that folder. Keep notes and instructions (like this file) outside `site/`, because anything inside it is public. Move to Astro only when the site outgrows a few pages, and ask first.

@@ -66,11 +66,17 @@ h2::before { content: counter(file, decimal-leading-zero) " / "; color: var(--ac
 .hero .btn { display: table; margin: 1.75rem auto 0; }
 .btn { padding: .7rem 1.5rem; background: var(--ink); color: var(--paper); font-family: var(--display); text-transform: uppercase; letter-spacing: .12em; text-decoration: none; box-shadow: 4px 4px 0 var(--accent); }
 .btn:hover { transform: translate(-1px, -1px); box-shadow: 6px 6px 0 var(--accent); }
+/* Store row under the stamp. Before launch each store is a faded <span>; on launch it becomes <a class="store" href="…">. */
+.stores { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: .8rem .9rem; margin: 1.9rem 0 0; padding: 0; }
+.store { display: inline-block; padding: .5rem .95rem; background: var(--ink); color: var(--paper); font-family: var(--display); font-size: .85rem; text-transform: uppercase; letter-spacing: .1em; text-decoration: none; box-shadow: 3px 3px 0 var(--accent); }
+a.store:hover { transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--accent); }
+span.store { opacity: .4; cursor: default; }
 @media (min-width: 40rem) {
   .hero .wrap { max-width: 50rem; }
   .case { grid-template-columns: 15rem 1fr; align-items: center; justify-items: start; text-align: left; gap: 3rem; }
   .cover { width: 100%; }
   .hero .btn { margin: 1.75rem 0 0; }
+  .stores { justify-content: flex-start; }
 }
 
 /* Excerpt: a typed page pinned to the wall */
