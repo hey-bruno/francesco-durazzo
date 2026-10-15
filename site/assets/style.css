@@ -133,3 +133,11 @@ dl.ficha dd { margin: 0; }
   dl.ficha { grid-template-columns: 11rem 1fr; gap: .9rem 1.25rem; }
   dl.ficha dt { margin-top: 0; padding-top: .2em; }
 }
+
+/* Menu on phones: one line in every language (Italian and Portuguese labels run longer) */
+@media (max-width: 30rem) {
+  nav { width: 100%; justify-content: space-between; gap: .25rem .5rem; letter-spacing: .02em; }
+}
+@media (max-width: 23rem) {
+  nav { font-size: .78rem; letter-spacing: 0; }
+}
