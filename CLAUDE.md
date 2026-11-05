@@ -20,6 +20,8 @@ Source for francescodurazzo.com, the author site of Francesco Durazzo.
   - English edition: *The Grand Galleria Detective Agency, Ltd.*, subtitle *Book 1: Cursed Frequency*.
   - Publisher: Porchester Publishing, London — https://porchesterpublishing.com
 
+- The Underqualified is a trilogy (decided by Bruno, November 2026): exactly three books. Book 1 São Paulo (this one), Book 2 the Bay Area, Book 3 London. Say "Book 1 of The Underqualified Trilogy" / "Livro 1 da trilogia The Underqualified" / "Libro 1 della trilogia The Underqualified"; never "series".
+
 ## Languages
 
 - Three language versions: English, Brazilian Portuguese and Italian. Italian is mostly symbolic for now; it is there because of the kinds of books Bruno plans to publish later.
