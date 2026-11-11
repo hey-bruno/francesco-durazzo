@@ -16,8 +16,8 @@ Source for francescodurazzo.com, the author site of Francesco Durazzo.
 - Copy comes from the approved files in `~/grandes-galerias/publicacao/` (decisions, bio, sinopse and so on). Treat `decisoes.md` there as the source of truth for names and decisions.
 - Settled facts so far:
   - Author: Francesco Durazzo (pen name).
-  - First book: *Agência de Detetives Grandes Galerias Ltda.*, subtitle *Livro 1: Frequência Maldita* (Brazilian Portuguese).
-  - English edition: *The Grand Galleria Detective Agency, Ltd.*, subtitle *Book 1: Cursed Frequency*.
+  - First book: *Agência de Detetives Grandes Galerias Ltda.*, subtitle *Frequência Maldita* (Brazilian Portuguese).
+  - English edition: *The Grand Galleria Detective Agency, Ltd.*, subtitle *Cursed Frequency*. No "Book 1" / "Livro 1" on the cover or in the subtitle (decided by Bruno, 11 November 2026): the book must read as a complete story; the trilogy is stated in store metadata, inside the book and in running text ("Book 1 of The Underqualified Trilogy"), never as part of the title. The current cover image is a mock-up; Bruno will produce the high-resolution final.
   - Publisher: Porchester Publishing, London — https://porchesterpublishing.com
 
 - The Underqualified is a trilogy (decided by Bruno, November 2026): exactly three books. Book 1 São Paulo (this one), Book 2 the Bay Area (*Stevens Creek Investigative Partners LLC: Not in My Bloody Backyard*), Book 3 London. Say "Book 1 of The Underqualified Trilogy" / "Livro 1 da trilogia The Underqualified" / "Libro 1 della trilogia The Underqualified"; never "series".
