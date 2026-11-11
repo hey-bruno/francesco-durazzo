@@ -20,7 +20,7 @@ Source for francescodurazzo.com, the author site of Francesco Durazzo.
   - English edition: *The Grand Galleria Detective Agency, Ltd.*, subtitle *Book 1: Cursed Frequency*.
   - Publisher: Porchester Publishing, London — https://porchesterpublishing.com
 
-- The Underqualified is a trilogy (decided by Bruno, November 2026): exactly three books. Book 1 São Paulo (this one), Book 2 the Bay Area, Book 3 London. Say "Book 1 of The Underqualified Trilogy" / "Livro 1 da trilogia The Underqualified" / "Libro 1 della trilogia The Underqualified"; never "series".
+- The Underqualified is a trilogy (decided by Bruno, November 2026): exactly three books. Book 1 São Paulo (this one), Book 2 the Bay Area (*Stevens Creek Investigative Partners LLC: Not in My Bloody Backyard*), Book 3 London. Say "Book 1 of The Underqualified Trilogy" / "Livro 1 da trilogia The Underqualified" / "Libro 1 della trilogia The Underqualified"; never "series".
 
 ## Languages
 
