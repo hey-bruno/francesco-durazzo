@@ -49,3 +49,4 @@ Source for francescodurazzo.com, the author site of Francesco Durazzo.
 - Pushing to `main` deploys to production. Make changes on a branch: Cloudflare publishes each branch to a preview address for review before merging.
 - Pushes go out as the GitHub account `hey-bruno`, not Bruno's work account.
 - On sale since 22 November 2026 (Bruno, 24 November). Store buttons are live `<a class="store">` links: PT Kindle https://www.amazon.com.br/dp/B0HSLW2HDC; EN Kindle https://www.amazon.co.uk/dp/B0HSJCNN11 and EN paperback https://www.amazon.co.uk/dp/1065481543 (also used on the Italian page). `/comprar` and `/buy` redirect to the PT and EN Kindle pages. Portuguese paperback is in Amazon review; add it when Bruno sends the link. Other stores were removed until they go live.
+- Clube de Autores (Portuguese edition, added 24 November 2026): https://clubedeautores.com.br/livro/agencia-de-detetives-grandes-galerias-ltda
